@@ -7,3 +7,11 @@ export function getList(params) {
     params
   })
 }
+
+export function getGoodsList(data) {
+  return request({
+    url: '/goods/queryPage',
+    method: 'post',
+    data: data
+  })
+}
