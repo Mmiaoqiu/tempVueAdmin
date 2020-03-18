@@ -117,6 +117,21 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/Insurance',
+    component: Layout,
+    redirect: '/Insurance/index',
+    name: 'Insurance',
+    meta: { title: '保险业务', icon: 'example' },
+    children: [
+      {
+        path: 'index',
+        name: 'InsuranceIndex',
+        component: () => import('@/views/Insurance/index'),
+        meta: { title: '全部客户', icon: 'dashboard' }
+      }
+    ]
+  },
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]

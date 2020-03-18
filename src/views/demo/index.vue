@@ -28,10 +28,9 @@
 <style lang="scss" scoped>
     .demo{
         width: 100%;
-        min-height: 900px;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: green;
     }
 </style>
